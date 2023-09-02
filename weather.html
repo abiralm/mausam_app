@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mausam</title>
+    <link rel="stylesheet" href=".\weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../weather_app\cloudy.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <form>
+                <label for="city"></label>
+                <input type="text" name="city" placeholder="Enter a city" id="cityName">
+            </form>
+            <button type="submit" id="submit_btn"><i class="fa fa-search"></i></button>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="main_img">
+            <img src="../weather_app\sun.png" id="weather_img">
+        </div>
+        <div>
+            <div class="places">
+                <h2 id="location"></h2>
+                <span id="country"></span>
+            </div>
+            <div>
+                <h4 id="temp"></h4>
+                <h4 id="condition"></h4>
+            </div>    
+            <section class="info">
+                <div class="sub_info">
+                    <span id="info_1"></span>
+                    <span>Humidity</span>
+                </div>
+                <div class="sub_info">
+                    <span id="info_2"></span>
+                    <span>Rain</span>
+                </div>
+                <div class="sub_info">
+                    <span id="info_3"></span>
+                    <span>Wind</span>
+                </div>
+                <div class="sub_info">
+                    <span id="info_4"></span>
+                    <span>Visibility</span>
+                </div>
+            </section>
+        </div>
+     </main>
+
+     <footer>
+        <div class="selector">
+            <input type="radio" id="daily_forecast" name="forecast" value="daily" checked />
+            <label for="daily">Daily</label>
+<!-- 
+            <input type="radio" id="hourly_forecast" name="forecast" value="hourly" />
+            <label for="hourly">Hourly</label> -->
+        </div>
+
+        <section id="section_forecast">
+        </section>
+
+     </footer>
+
+</body>
+    <script src=".\weather.js"></script>
+</html>
